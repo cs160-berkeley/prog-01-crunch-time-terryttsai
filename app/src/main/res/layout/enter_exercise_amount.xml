@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="How many *EXERCISE* did you do?"
+        android:id="@+id/how_many_exercise"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/amount_exercise"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/how_many_exercise"
+        android:layout_toLeftOf="@+id/button_go"
+        android:layout_alignLeft="@+id/how_many_exercise"
+        android:layout_alignStart="@+id/how_many_exercise" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="reps / minutes"
+        android:id="@+id/reps_minutes"
+        android:layout_alignTop="@+id/amount_exercise"
+        android:layout_toRightOf="@+id/amount_exercise"
+        android:layout_toEndOf="@+id/amount_exercise"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:id="@+id/button_go"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/amount_exercise"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
